@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif&family=Preahvihear&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: antiquewhite;
+}
+nav{
+    list-style-type: none;
+    background-color: rgb(14, 236, 236);
+    color:black;
+    font-family: 'Noto Serif', serif;
+    height:58px;
+    display:flex;
+    align-items:center;
+    font-size: 21px;
+    font-weight:bolder;
+}
+nav ul li{
+    margin:0 12px;
+}
+.gameContainer{
+   display:flex;
+   /*flex-wrap: wrap;*/
+   justify-content:center; 
+   margin:20px 0;
+}
+.line{
+    position:absolute;
+    background-color: black;
+    width:0vw;
+    height:5px;
+    background-color: brown;
+    transition:width 1s ease-in-out;
+}
+.container{
+    position:relative;
+    display:grid;
+    grid-template-columns:repeat(3,20vh);
+    grid-template-rows: repeat(3,10vw);
+}
+.box:hover{
+    background-color: rgb(204, 149, 255);
+    cursor:pointer;
+}
+.box{
+    font-size: 80px;
+    border:2px solid black;
+    font-family: 'Noto Serif', serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.gameInfo{
+    margin-left: 100px;
+    font-family: 'Preahvihear';
+}
+#reset{
+    background-color:aquamarine;
+    font-size: 27px;
+    border-radius: 14px;
+    cursor: pointer;
+
+}
+.imagebox img{
+width:0px;
+transition: width 1sec ease-in-out;
+}
+.bl-0{
+    border-left: 0;
+}
+.br-0{
+    border-right:0;
+}
+.bt-0{
+    border-top:0;
+}
+.bb-0{
+    border-bottom:0;
+}
+@media screen and (max-width:951px){
+    .gameContainer{
+        flex-wrap: wrap;
+        height:200px;
+    }
+    .gameinfo{
+        margin-top: 100px;
+    }
+}
