@@ -1,5 +1,5 @@
-let music=new Audio("D:/mY PROJECTS/Tic Tac Toe/songs/Winning.mp3");
-let ting=new Audio("D:/mY PROJECTS/Tic Tac Toe/songs/ting.mp3");
+let music=new Audio("Winning.mp3");
+let ting=new Audio("ting.mp3");
 var turn='X';
 let gameOver=false;
 //function for change turn
